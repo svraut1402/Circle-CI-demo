@@ -34,7 +34,7 @@ jobs:
       - run: printenv
       - run:
           name: Infra Creation/Terraform Plan
-          command:
+          command: |
             terraform init -backend-config="key=tfdemo/terraform.tfstate"
             terraform plan -var-file="dev.tfvars" -out tfapply
   tfapply:
