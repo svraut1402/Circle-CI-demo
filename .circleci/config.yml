@@ -30,7 +30,7 @@ jobs:
           profile_name: tfdemo
           role_arn: <<parameters.role_arn>>
           source_profile: default
-      - run: aws sts get-caller-identity
+      #- run: aws sts get-caller-identity
       - run: printenv
       - run:
           name: Infra Creation/Terraform Plan
@@ -57,7 +57,7 @@ jobs:
           profile_name: tfdemo
           role_arn: <<parameters.role_arn>>
           source_profile: default
-      - run: aws sts get-caller-identity
+      #- run: aws sts get-caller-identity
       # - run: printenv
       - run:
           name: Infra Creation/Terraform Apply
