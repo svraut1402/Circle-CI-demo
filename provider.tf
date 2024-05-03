@@ -9,8 +9,8 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "devsecops-chatbot"
-    region         = "us-east-1"
+    bucket         = "costwise"
+    region         = "eu-central-1"
     #dynamodb_table = "cicd-terraform-state-artifact-locks"
     assume_role = {
       role_arn = var.role_arn
