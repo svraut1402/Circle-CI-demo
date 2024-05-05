@@ -6,5 +6,5 @@ variable "region" {
 variable "role_arn" {
     description = "aws role arn"
     type = string
-    default = "arn:aws:iam::081062091748:role/DevOp"
+    default = "arn:aws:iam::312552815388:role/DevOp"
 }

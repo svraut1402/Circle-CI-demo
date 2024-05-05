@@ -76,7 +76,7 @@ workflows:
         context: 
           - cicd-context
         region: eu-central-1
-        role_arn: arn:aws:iam::081062091748:role/DevOp
+        role_arn: arn:aws:iam::312552815388:role/DevOp
     - tfapply_approval:
         type: approval
         requires:
@@ -85,7 +85,7 @@ workflows:
         context: 
           - cicd-context
         region: eu-central-1
-        role_arn: arn:aws:iam::081062091748:role/DevOp
+        role_arn: arn:aws:iam::312552815388:role/DevOp
         requires:
           - tfapply_approval
 
