@@ -75,7 +75,7 @@ workflows:
     - tfplan: 
         context: 
           - cicd-context
-        region: eu-central-1
+        region: us-east-1
         role_arn: arn:aws:iam::312552815388:role/DevOp
     - tfapply_approval:
         type: approval
@@ -84,7 +84,7 @@ workflows:
     - tfapply:  # This job runs after approval
         context: 
           - cicd-context
-        region: eu-central-1
+        region: us-east-1
         role_arn: arn:aws:iam::312552815388:role/DevOp
         requires:
           - tfapply_approval
